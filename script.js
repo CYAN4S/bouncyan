@@ -13,6 +13,6 @@ main.addEventListener("click", () => {
 });
 
 change.addEventListener("click", () => {
-  img.src = state ? "./BOUNCYAN LOOP.svg" : "./BOUNCYAN.svg";
+  img.src = state ? "./loop.svg" : "./default.svg";
   state = !state;
 });
