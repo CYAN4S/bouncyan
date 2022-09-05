@@ -1,12 +1,4 @@
-@font-face {
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Outfit Bold"),
-    url(https://fonts.gstatic.com/l/font?kit=QGYvz_MVcBeNP4N5tllKW7Ddrct81M7BE7jVVGtt5uGaa2iAC4wTah6WuAHSfJBjMm4y5w&skey=bafc0b239d492b2c&v=v6)
-      format("woff2");
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ%20');
 
 * {
   padding: 0;
