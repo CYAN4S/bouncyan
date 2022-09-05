@@ -1,7 +1,17 @@
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Outfit Bold"),
+    url(https://fonts.gstatic.com/l/font?kit=QGYvz_MVcBeNP4N5tllKW7Ddrct81M7BE7jVVGtt5uGaa2iAC4wTah6WuAHSfJBjMm4y5w&skey=bafc0b239d492b2c&v=v6)
+      format("woff2");
+}
+
 * {
   padding: 0;
   margin: 0;
-  font: 700 14px Montserrat;
+  font: 700 14px Outfit;
   user-select: none;
 }
 
@@ -57,5 +67,5 @@ button {
 .logo {
   width: 14px;
   height: 14px;
-  vertical-align: text-top;
+  vertical-align: -0.15em;
 }
