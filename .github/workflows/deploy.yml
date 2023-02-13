@@ -1,4 +1,4 @@
-name: Let's Go!
+name: Build & Deploy
 
 on:
   push:
