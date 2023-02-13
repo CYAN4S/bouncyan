@@ -6,12 +6,9 @@ import one from "./one.svg";
 import more from "./more.svg";
 import loop from "./loop.svg";
 
-import og from "./og.png";
-
 import oneIcon from "./icons/one.svg";
 import moreIcon from "./icons/more.svg";
 import loopIcon from "./icons/loop.svg";
-import { Meta } from "@solidjs/meta";
 
 const motions = [one, more, loop];
 const backs = [styles.cyan, styles.white, styles.room];
@@ -32,9 +29,6 @@ const App: Component = () => {
 
   return (
     <>
-      <Meta property="og:image" content={og} />
-      <Meta property="twitter:image" content={og} />
-
       <main class={`${styles.main} ${backs[back()]} ${!visible() && styles.nocursor}`} onclick={() => setVisible(x => !x)}>
         <span class={`${styles.label} ${!label() && styles.none}`}>CYAN</span>
         <img src={motions[motion()]} class={styles.core} alt="The animation of Cyan bouncing."/>
