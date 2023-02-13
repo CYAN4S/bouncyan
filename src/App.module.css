@@ -1,0 +1,167 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.none {
+  display: none;
+}
+
+.nocursor {
+  cursor: none;
+}
+
+/* INSIDE MAIN */
+
+.core {
+  max-height: 100%;
+  max-width: 100%;
+
+  z-index: 1;
+}
+
+.label {
+  font: 800 min(30vh, 30vw) "Plus Jakarta Sans";
+  background: linear-gradient(to bottom, #ffffffff 20%, #ffffff23);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: fixed;
+  bottom: 60%;
+}
+
+.cyan .label {
+  background: linear-gradient(to bottom, #ffffffff 20%, #ffffff23);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.white .label {
+  background: linear-gradient(to bottom, #26bfb3ff 20%, #26bfb323);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.room .label {
+  background: linear-gradient(to bottom, #26bfb3ff 20%, #26bfb323);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* SETTINGS */
+
+.settings {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 270px;
+
+  border-radius: 8px;
+}
+
+.settings form {
+  margin: 24px 18px;
+}
+
+.settings h2 {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.settings hr {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin: 20px 0;
+}
+
+.settings .labels {
+  display: flex;
+  justify-content: space-around;
+}
+
+.settings .labels img {
+  width: 60px;
+}
+
+.settings .labels div {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.settings input {
+  display: none;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slideBar {
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: white;
+  transition: all 200ms;
+}
+
+.slideBar > div {
+  width: 16px;
+  height: 16px;
+  border-radius: 9px;
+  background-color: #26bfb3;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  transition: all 200ms;
+}
+
+input:checked ~ .slideBar {
+  background-color: #26bfb3;
+}
+
+input:checked ~ .slideBar > div {
+  background-color: white;
+  left: 22px;
+}
+
+a {
+  color: white;
+}
+
+/* BACKGROUND */
+
+.white {
+  background-color: white;
+}
+
+.cyan {
+  background-color: #26bfb3;
+}
+
+.room {
+  background: radial-gradient(
+    ellipse 200vw 100vh at 50% 100%,
+    #90d2cc 50%,
+    #d3ebe9 50%
+  );
+}
+
+/* Just for button! */
+
+.roomx {
+  background: radial-gradient(
+    ellipse 200% 100% at 50% 100%,
+    #90d2cc 50%,
+    #d3ebe9 50%
+  );
+}

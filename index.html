@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="CYAN4S" />
-    <meta name="description" content="SVG Animation of Cyan bouncing.">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#26bfb3">
-    <title>Cyan is bouncing!</title>
+    <meta charset="utf-8" />
+
+    <!-- Global Metadata -->
+    <title>Bouncing Cyan!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#26bfb3" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/src/favicon.ico" sizes="any"/>
+    <link rel="icon" href="/src/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/src/favicon.png" />
+
+    <!-- Primary Meta Tags -->
+    <title>Bouncing Cyan!</title>
+    <meta name="title" content="Bouncing Cyan!" />
+    <meta name="description" content="SVG animation of Cyan bouncing." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://boun.cyan4s.com/" />
+    <meta property="og:title" content="Bouncing Cyan!" />
+    <meta property="og:description" content="SVG animation of Cyan bouncing." />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://boun.cyan4s.com/" />
+    <meta property="twitter:title" content="Bouncing Cyan!" />
+    <meta property="twitter:description" content="SVG animation of Cyan bouncing." />
+    <meta property="twitter:image" content="/src/og.png" />
+    <meta property="twitter:site" content="@cyan4s" />
+    <meta property="twitter:creator" content="@cyan4s" />
+
+    <!-- Added by Solid -->
   </head>
-  <body class="none">
-    <main>
-      <img
-        id="img"
-        src="./default.svg"
-        alt="Animated SVG image of Cyan bouncing."
-      />
-    </main>
-    <footer>
-      <a href="https://www.cyan4s.com">BY CYAN4S <img class="logo" src="./c.svg" alt="CYAN4S"/></a>
-      <a href="https://github.com/CYAN4S/bouncyan">CODE AT <img class="logo" src="./gh.svg" alt="GitHub"/></a>
-      <button id="change">CHANGE</button>
-    </footer>
-    <script src="./script.js"></script>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="/src/index.tsx" type="module"></script>
   </body>
 </html>
